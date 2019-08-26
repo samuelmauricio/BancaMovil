@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#f3eef1">
+
+    <LinearLayout
+        android:id="@+id/llbcp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#203095"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="BCP"
+            android:textSize="50dp"
+            android:textColor="#f2ffff"
+            android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llanimation1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/llbcp">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="bank.json"
+            app:lottie_loop="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lltext1"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/llanimation1">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Bienvenido a la banca Movil BCP"
+            android:textSize="20dp"
+            android:textColor="#6b8992"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lltext2"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/lltext1">
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Por tu seguridad, antes de empezar a operar"
+            android:textSize="13dp"
+            android:textColor="#6b8992"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lltext3"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/lltext2">
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="debes afiliar tu dispositivo"
+            android:textSize="13dp"
+            android:textColor="#6b8992"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAfiliar"
+        android:layout_below="@+id/lltext3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_centerInParent="true"
+        android:text="Afiliar"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#f3fbfb"
+        android:background="@drawable/rounded_btn"/>
+
+</RelativeLayout>

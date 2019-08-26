@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BancaMovil</string>
+    <string name="ptc">Pago de Tarjetas de Crédito</string>
+    <string name="registro">Registro de Usuarios</string>
+</resources>
